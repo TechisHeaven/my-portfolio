@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   Download,
   Github,
   Instagram,
@@ -27,8 +26,8 @@ export default function HeroSection() {
         </h1>
         <p className="font-medium">Full Stack Web Developer</p>
         <p className="text-gray-500 text-sm">
-          Hi, I'm Himanshu and I am a FullStack MERN Developer. Trying to make
-          awesome React and Nextjs Web apps
+          Hi, I&apos;m Himanshu and I am a FullStack MERN Developer. Trying to
+          make awesome React and Nextjs Web apps
         </p>
         <div className="flex-0">
           <button className="relative inline-flex items-center justify-center p-2 px-4 overflow-hidden font-medium  transition duration-300 ease-out border-2 border-black rounded-md shadow-md group ">

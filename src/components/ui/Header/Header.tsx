@@ -32,7 +32,7 @@ export default function Header() {
             className="w-4 group-hover:rotate-45 transition-all"
             key={"Talk-button"}
           />
-          <p className="z-20">Let's Talk</p>
+          <p className="z-20">Let&apos;s Talk</p>
         </button>
       </div>
     </header>
