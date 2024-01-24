@@ -31,9 +31,9 @@ export default async function Skills() {
     <div>
       <h1>Skills</h1>
       <div className="skills flex items-center flex-row gap-4 justify-between">
-        {skillsData.map((sk) => {
+        {skillsData.map((sk, index) => {
           return (
-            <div className="skill">
+            <div key={index} className="skill">
               <Image alt="skill-image" width={80} height={80} src={sk.img} />
               <h1>{sk.title}</h1>
             </div>
