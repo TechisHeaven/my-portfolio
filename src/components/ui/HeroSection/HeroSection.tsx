@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="hero-section flex gap-12 flex-row w-full justify-center my-20 px-10">
+    <div className="hero-section flex gap-12 flex-row w-full justify-center py-20 px-10">
       <div className=" w-[400px] h-[500px] aspect-square overflow-hidden relative">
         <Image
           className="w-full object-top h-full object-cover rounded-full"
@@ -44,31 +44,31 @@ export default function HeroSection() {
           Follow me:{" "}
           <a
             href="#instagram"
-            className="p-2 hover:bg-black rounded-md hover:text-white transition-colors"
+            className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Instagram />
           </a>
           <a
             href="#instagram"
-            className="p-2 hover:bg-black rounded-md hover:text-white transition-colors"
+            className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Github />
           </a>
           <a
             href="#instagram"
-            className="p-2 hover:bg-black rounded-md hover:text-white transition-colors"
+            className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Linkedin />
           </a>
           <a
             href="#instagram"
-            className="p-2 hover:bg-black rounded-md hover:text-white transition-colors"
+            className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Twitter />
           </a>
         </div>
       </div>
-      <div className="scrollArrow absolute bottom-40">
+      <div className="scrollArrow absolute bottom-24">
         <Mouse />
       </div>
     </div>

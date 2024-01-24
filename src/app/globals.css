@@ -39,3 +39,31 @@ body {
   height: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
 }
+
+.pageScroller {
+  rotate: 0;
+  animation: rotation linear;
+  animation-timeline: scroll();
+}
+@keyframes rotation {
+  to {
+    rotate: 360deg;
+  }
+}
+/* .mainSkillheading {
+  animation: opacity linear;
+  animation-timeline: view();
+  animation-range-end: 400px;
+  animation-range: entry 100px;
+} */
+
+@keyframes opacity {
+  from {
+    scale: 0.9;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 100;
+  }
+}
