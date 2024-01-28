@@ -20,9 +20,6 @@
   --foreground: black;
 }
 
-body {
-  background-color: var(--background) !important;
-}
 /* @media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -40,6 +37,7 @@ body {
 } */
 
 body {
+  /* background-color: var(--background) !important; */
   color: rgb(var(--foreground-rgb));
   /* background: linear-gradient(
       to bottom,
