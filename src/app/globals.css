@@ -10,11 +10,13 @@
 }
 
 [data-theme="dark"] {
-  --background: black;
-  --foreground: white;
+  /* --background: black;
+  --foreground: white; */
+  --background: white;
+  --foreground: black;
 }
 [data-theme="light"] {
-  --background: red;
+  --background: white;
   --foreground: black;
 }
 
