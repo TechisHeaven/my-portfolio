@@ -148,11 +148,12 @@ export default function SplashScreen() {
       y: "-100%",
     },
   };
-
-  if (!hideAnimationDiv && document) {
-    document.body.style.overflowY = "hidden";
-  } else {
-    document.body.style.overflowY = "auto";
+  if (typeof document !== "undefined") {
+    if (!hideAnimationDiv && document) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
   }
   return (
     !hideAnimationDiv && (
