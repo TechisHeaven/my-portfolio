@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default async function Experience() {
   return (
-    <div className="my-20 ">
+    <div className="my-20 px-4">
       <h1 className="font-bold text-2xl my-4"> Experience</h1>
       <div className="experience-items flex items-center flex-row gap-4">
         <a
@@ -18,7 +18,7 @@ export default async function Experience() {
               alt="company-image"
               src={"/littlemove.jpg"}
               draggable="false"
-              className="grayscale saturate-0 select-none"
+              className="grayscale hover:grayscale-0 hover:saturate-100 transition-all saturate-0 select-none"
             />
           </div>
           <div>
@@ -33,7 +33,7 @@ export default async function Experience() {
           href={"https://www.aapniidukan.in"}
           className="item p-4 px-8  flex items-center gap-2"
         >
-          <p className="icon  bg-gray-300 text-white flex items-center justify-center rounded-full w-10 h-10 aspect-square overflow-hidden border">
+          <p className="icon  bg-gray-300 text-white hover:bg-yellow-500 transition-colors flex items-center justify-center rounded-full w-10 h-10 aspect-square overflow-hidden border">
             A
           </p>
           <div>

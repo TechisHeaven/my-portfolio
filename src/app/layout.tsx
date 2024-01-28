@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/ui/Header/Header";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 // const inter = Inter({ subsets: ["latin"] });
 const myFont = localFont({ src: "../../Fonts/MADEINFINITY-Regular.woff" });
@@ -23,8 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myFont.className}>
-        <Header />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

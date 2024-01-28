@@ -6,13 +6,34 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --lines: 0.0001px;
 }
 
-/* @media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+}
+[data-theme="light"] {
+  --background: red;
+  --foreground: black;
+}
+
+body {
+  background-color: var(--background) !important;
+}
+/* @media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+  }
+  body {
+    background-color: yellow;
+  }
+} */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: red;
   }
 } */
 
@@ -66,4 +87,16 @@ body {
     scale: 1;
     opacity: 100;
   }
+}
+
+.nameText {
+  mask: repeating-radial-gradient(
+    circle at center,
+    #000,
+    12px,
+    #000,
+    0,
+    #0000,
+    calc(12px * 2, #0000 0)
+  );
 }
