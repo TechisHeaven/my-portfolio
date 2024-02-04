@@ -43,25 +43,29 @@ export default function HeroSection() {
         <div className="flex items-center text-sm text-gray-600 gap-2 mt-8">
           Follow me:{" "}
           <a
-            href="#instagram"
+            href="https://www.instagram.com/its_vermajii"
+            target="__blank"
             className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Instagram />
           </a>
           <a
-            href="#instagram"
+            href="https://github.com/techisHeaven"
+            target="__blank"
             className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Github />
           </a>
           <a
-            href="#instagram"
+            href="https://www.linkedin.com/in/himanshu-verma-2150b5252"
+            target="__blank"
             className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Linkedin />
           </a>
           <a
-            href="#instagram"
+            href="https://twitter.com/@itz_vermajii"
+            target="__blank"
             className="p-2 bg-slate-100 hover:bg-black rounded-md hover:text-white transition-colors"
           >
             <Twitter />
