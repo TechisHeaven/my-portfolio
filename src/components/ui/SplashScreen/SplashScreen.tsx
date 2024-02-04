@@ -6,11 +6,7 @@ export default function SplashScreen() {
   const string = "#TechisHeaven";
   const arrayString = string.split("");
   const ref = React.useRef(null);
-  var isAnimated;
-  // const isInView = useInView(ref, { amount: 0.5 });
-  if (typeof sessionStorage !== "undefined") {
-    isAnimated = Boolean(sessionStorage.getItem("isAnimationCompleted"));
-  }
+
   const [hideAnimationDiv, setHideAnimationDiv] = React.useState(false);
   // const [animationTerminal, setAnimationTerminal] = React.useState(false);
   function randomString(length: number) {
