@@ -1,31 +1,18 @@
 "use client";
-import {
-  motion,
-  stagger,
-  useInView,
-  useTime,
-  useTransform,
-} from "framer-motion";
-import { Scale } from "lucide-react";
+import { motion, useInView } from "framer-motion";
 import React from "react";
 import Counter from "./Counter";
-import TerminalSection from "./TerminalSection";
 export default function SplashScreen() {
   const string = "#TechisHeaven";
   const arrayString = string.split("");
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { amount: 0.5 });
-
-  // const textContainerArray = [
-  //   {
-  //     id: "1",
-  //     text: arrayString,
-  //   },
-  // ];
-  // const [textContainerArrayData, setTextContainerArrayData] =
-  //   React.useState(textContainerArray);
+  var isAnimated;
+  // const isInView = useInView(ref, { amount: 0.5 });
+  if (typeof sessionStorage !== "undefined") {
+    isAnimated = Boolean(sessionStorage.getItem("isAnimationCompleted"));
+  }
   const [hideAnimationDiv, setHideAnimationDiv] = React.useState(false);
-  const [animationTerminal, setAnimationTerminal] = React.useState(false);
+  // const [animationTerminal, setAnimationTerminal] = React.useState(false);
   function randomString(length: number) {
     var chars =
       "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz".split("");
@@ -158,13 +145,6 @@ export default function SplashScreen() {
   return (
     !hideAnimationDiv && (
       <motion.div
-        // onAnimationComplete={async () => {
-        //   function sleep(time: number) {
-        //     return new Promise((resolve) => setTimeout(resolve, time));
-        //   }
-        //   await sleep(12000).then(() => setHideAnimationDiv(true));
-        //   // setAnimationTerminal(true);
-        // }}
         onAnimationComplete={() => {
           setHideAnimationDiv(true);
         }}
@@ -219,10 +199,14 @@ export default function SplashScreen() {
             borderRadius: 0,
             transition: { duration: 0.4, delay: 5 },
           }}
+          onAnimationComplete={() => {
+            sessionStorage.setItem("isAnimationCompleted", "true");
+          }}
           initial={{ opacity: 1 }}
           // exit={{ opacity: 0 }}
         >
           <motion.span
+            style={{ opacity: 0 }}
             animate={{
               opacity: 0,
               display: "none",
@@ -233,7 +217,7 @@ export default function SplashScreen() {
             <Counter value={100} />%
           </motion.span>
         </motion.div>
-        <TerminalSection />
+        {/* <TerminalSection /> */}
       </motion.div>
     )
   );
