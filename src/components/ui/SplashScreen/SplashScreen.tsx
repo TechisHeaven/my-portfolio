@@ -147,7 +147,10 @@ export default function SplashScreen() {
         {...anim(ScreenHidder)}
         className="fixed bg-white w-full h-full z-50 flex items-center justify-center"
       >
-        <motion.h1 ref={ref} className=" font-bold text-9xl flex flex-col">
+        <motion.h1
+          ref={ref}
+          className=" font-bold text-6xl px-4 sm:text-6xl lg:text-9xl flex flex-col"
+        >
           <div className="flex">
             {arrayString.map((str, index) => {
               return (

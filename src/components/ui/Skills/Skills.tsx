@@ -29,8 +29,8 @@ export default async function Skills() {
   ];
   return (
     <div className="my-20 px-4">
-      <h1 className="font-bold text-2xl">Skills</h1>
-      <div className="skills flex items-center flex-row gap-4 justify-between p-4">
+      <h1 className="font-bold text-3xl m-4">Skills</h1>
+      <div className="skills flex flex-wrap items-center flex-row gap-4 justify-between p-4">
         {skillsData.map((sk, index) => {
           return (
             <div key={index} className="skill">

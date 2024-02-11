@@ -4,8 +4,8 @@ import Link from "next/link";
 export default async function Experience() {
   return (
     <div className="my-20 px-4">
-      <h1 className="font-bold text-2xl my-4"> Experience</h1>
-      <div className="experience-items flex items-center flex-row gap-4">
+      <h1 className="font-bold text-3xl m-4"> Experience</h1>
+      <div className="experience-items flex-col flex sm:items-center sm:flex-row gap-4">
         <a
           target="__blank"
           href={"https://www.littlemove.in/"}

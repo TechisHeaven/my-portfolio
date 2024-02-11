@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div className="my-20 px-2">
-      <h1 className="font-bold text-2xl">Projects</h1>
-      <div className="items m-4 grid grid-cols-2 grid-rows-2 gap-4">
+      <h1 className="font-bold text-3xl m-4">Projects</h1>
+      <div className="items m-4 grid md:grid-cols-2 sm:grid-cols-1 grid-rows-2 gap-4">
         <div className="item w-full aspect-square flex items-center justify-center text-xl bg-gray-200 rounded-md relative">
           <a
             target="__blank"

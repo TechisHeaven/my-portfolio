@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="hero-section flex gap-12 flex-row w-full justify-center py-20 px-10">
+    <div className="hero-section flex gap-12 flex-col-reverse w-full justify-center py-20 px-10 md:flex-row sm:flex-col-reverse">
       <div className=" w-[400px] h-[500px] aspect-square overflow-hidden relative">
         <Image
           className="w-full object-top h-full object-cover rounded-full"
@@ -20,7 +20,7 @@ export default function HeroSection() {
           src={"/hero-image.jpg"}
         ></Image>
       </div>
-      <div className="relative flex-1 mt-20 flex items-start justify-center flex-col gap-4">
+      <div className="relative sm:px-16 md:px-0 flex-1 mt-20 flex items-start justify-center flex-col gap-4">
         <h1 className="font-bold  text-6xl before:absolute before:bg-yellow-400 text-black before:skew-x-12 before:-skew-y-3 before:w-72   before:h-16  before:-z-10">
           Himanshu
         </h1>
