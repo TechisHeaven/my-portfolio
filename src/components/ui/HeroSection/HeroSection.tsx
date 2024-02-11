@@ -10,18 +10,18 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="hero-section flex gap-12 flex-col-reverse w-full justify-center py-20 px-10 md:flex-row sm:flex-col-reverse">
-      <div className=" w-[400px] h-[500px] aspect-square overflow-hidden relative">
+    <div className="hero-section flex gap-12 flex-col-reverse w-full justify-center py-4 sm:py-20 px-10 md:flex-row sm:flex-col-reverse">
+      <div className="max-w-[400px] min-w-[200px] min-h-[100px] max-h-[500px] aspect-square overflow-hidden relative">
         <Image
           className="w-full object-top h-full object-cover rounded-full"
           alt="hero-image"
           width={500}
-          height={500}
+          height={300}
           src={"/hero-image.jpg"}
         ></Image>
       </div>
       <div className="relative sm:px-16 md:px-0 flex-1 mt-20 flex items-start justify-center flex-col gap-4">
-        <h1 className="font-bold  text-6xl before:absolute before:bg-yellow-400 text-black before:skew-x-12 before:-skew-y-3 before:w-72   before:h-16  before:-z-10">
+        <h1 className="font-bold text-5xl sm:text-6xl before:absolute before:bg-yellow-400 text-black before:skew-x-12 before:-skew-y-3 before:w-56 sm:before:w-72  before:h-12  sm:before:h-16  before:-z-10">
           Himanshu
         </h1>
         <p className="font-medium">Full Stack Web Developer</p>

@@ -10,7 +10,7 @@ export default function Header() {
   //   console.log(theme);
   // }, [theme]);
   return (
-    <header className="p-2 px-4 flex justify-between items-center">
+    <header className="p-2 px-4 flex flex-wrap justify-between items-center">
       <div className="flex items-center flex-row gap-2">
         <Link
           href={"/"}
