@@ -54,13 +54,17 @@ export default function Header() {
           </div>
         </div> */}
         <div className="relative overflow-hidden">
-          <button className="flex shadow-sm hover:shadow-md group items-center p-2 px-4 gap-2 border rounded-md bg-black text-white  before:w-full before:absolute before:bg-yellow-500 before:left-0 before:h-10 before:-translate-y-full hover:before:translate-y-0 before:transition-all  before:opacity-0 before:hover:opacity-100 hover:text-black before:rounded-b-full before:hover:rounded-md before:duration-150">
+          <a
+            target="__blank"
+            href="https://www.linkedin.com/in/himanshu-verma-2150b5252/"
+            className="flex shadow-sm  hover:shadow-md group items-center p-2 px-4 gap-2 border rounded-md bg-black text-white  before:w-full before:absolute before:bg-yellow-500 before:left-0 before:h-10 before:-translate-y-full hover:before:translate-y-0 before:transition-all  before:opacity-0 before:hover:opacity-100 hover:text-black before:rounded-b-full before:hover:rounded-md before:duration-150"
+          >
             <Send
               className="w-4 group-hover:rotate-45 transition-all"
               key={"Talk-button"}
             />
             <p className="z-20">Let&apos;s Talk</p>
-          </button>
+          </a>
         </div>
       </div>
     </header>
